@@ -1,0 +1,191 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-image: url("./images/fondo.png")
+}
+
+/* COMÚN A WELCOME Y A INSTRUCTION - ADEMÁS EN C/PAGE HAY PARTES PROPIAS*/
+  .content__game {
+    display: flex;
+    justify-content: center;
+    align-items:flex-end;
+  }
+  
+  .content__hands {
+    display: flex;
+  }
+  @media (min-width: 330px) {
+    .content__hands {
+      gap: 30px;
+    }
+  }
+
+/* WELCOME */
+
+.welcome__content {
+  display: grid;
+  justify-content: center;
+  text-align: center; 
+  padding: 60px 26px 0 26px;
+  gap:30px;
+  height:100vh;
+}
+@media (min-height: 550px) {
+  .welcome__content {
+      padding: 145px 26px 0 26px;
+  }
+}
+@media (min-width: 480px) {
+  .welcome__content {
+      padding: 145px 26px 0 26px;
+  }
+}
+
+.welcome__main {
+  max-width: 336px;
+}
+
+.welcome__title-cont {
+  margin: 0 0 74px 0;
+}
+
+.welcome__title {
+  font-family: "Zilla Slab", sanf-serif;
+  font-size: 65px;
+  width: 100%;
+  margin: 0;
+  color: #009048;
+  line-height: 70px;
+}
+@media (min-width: 330px) {
+  .welcome__title {
+  font-size: 80px;
+  }
+}
+
+/* INSTRUCTIONS */
+.inst__content {
+  display: grid;
+  justify-content: center;
+  padding: 60px 26px 0 26px;
+  gap: 30px;
+  height: 100vh;
+}
+
+@media (min-height: 550px) {
+  .inst__content {
+      padding: 130px 26px 0 26px;
+  }
+}
+
+.inst__main {
+  max-width: 336px;
+}
+
+@media (min-width: 420px) {
+  .inst__main {
+      max-width: 100%;
+  }
+}
+
+.inst__title-cont {
+  margin: 0 0 45px 0;
+}
+
+.inst__title {
+  font-size: 30px;
+  line-height: 40px;
+  text-align: center;
+  margin: 0;
+  font-family: "Zilla Slab", sans-serif;
+}
+
+@media (min-width: 330px) {
+  .inst__title {
+      font-size: 40px;
+  }
+}
+
+@media (min-width: 420px) {
+  .inst__title {
+      width: 313px;
+      margin: 0 auto;
+  }
+}
+
+/* GAME (VER EN PAGE */
+
+/* RESULT */
+.result {
+  display: grid;
+  justify-content: center;
+  background-color: rgba(137, 73, 73, 0.6);
+  height: 100%;
+  padding: 0 20px;
+}
+@media (min-height: 620px) {
+  .result {
+    height:100vh;
+  }
+}
+
+.result--green {
+  background-color: rgba(136, 137, 73, 0.6);
+}
+
+.result__star {
+  height: 260px;
+  position: relative;
+  margin: 36px auto 11px auto;
+}
+
+.result__text-star {
+  font-family: "Odibee Sans", sans-serif;
+  letter-spacing: 0.05em;
+  font-size: 50px;
+  color: white;
+  position: absolute;
+  top: 37%;
+  left: 25%;
+  margin: 0;
+  
+}
+.result__text-star--draw{
+  left:35%;
+}
+
+.result__score {
+  border: 10px solid #000000;
+  background-color: white;
+  width: 259px;
+  border-radius: 10px;
+  margin: 0 auto 21px auto;
+  font-family: "Odibee Sans", sans-serif;
+  height: 217px;
+  padding: 8px;
+}
+
+.result__text-score,
+.result__text-player,
+.result__text-pc {
+  font-family: "Odibee Sans", sans-serif;
+  font-weight: 400;
+  font-size: 45px;
+  text-align: center;
+  margin: 0 0 13px 0;
+}
+
+.result__cont-button {
+  height: 87px;
+  margin: 0 0 35px 0;
+  max-width: 335px;
+}
+@media (min-width: 330px) {
+  .result__cont-button {
+    max-width: 100%;
+    width: 335px;
+  }
+}
