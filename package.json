@@ -8,8 +8,8 @@
   },
   "scripts": {
     "start": "parcel serve ./src/index.html",
-    "build": "parcel build ./src/index.html --dist-dir build",
-    "deploy": "gh-pages -d dist"
+    "build": "parcel build ./src/index.html --dist-dir build --public-url /Rock-Paper-Scissors/",
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
     "gh-pages": "^4.0.0"

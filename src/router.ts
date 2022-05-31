@@ -3,7 +3,7 @@ import { initWelcome } from "./pages/welcome/";
 import { initGame } from "./pages/game";
 import { initResult } from "./pages/result";
 
-const BASE_PATH = "/Piedra-Papel-Tijera";
+const BASE_PATH = "/Rock-Paper-Scissors";
 const routes = [
     {
         path: /\/welcome/,
@@ -49,7 +49,7 @@ export function initRouter(containerEl: Element) {
   }
 
   if (
-    window.location.pathname == "/Piedra-Papel-Tijera/" ||
+    window.location.pathname == "/Rock-Paper-Scissors/" ||
     window.location.pathname == "/"
   ) {
     goTo("/welcome");
