@@ -1,6 +1,7 @@
 {
   "name": "08_challenge",
   "version": "1.0.0",
+  "source": "index.html",
   "license": "MIT",
   "devDependencies": {
     "@parcel/transformer-image": "2.0.0-rc.0",
